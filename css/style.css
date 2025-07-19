@@ -136,3 +136,147 @@ nav ul li a:hover {
 .location {
     background-color: rgb(235, 217, 194);
 }
+#our-books {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#our-books h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#our-books p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+#our-books div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#our-books div > div {
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#our-books img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#our-books h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#our-books p {
+    font-size: 15px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 40px;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f4c430;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #2c2c2c;
+        padding: 10px 0;
+    }
+
+    .about, .location {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img, .location-image img {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    footer > div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #our-books div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #our-books div > div {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-buttons a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+}
